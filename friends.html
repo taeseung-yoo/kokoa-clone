@@ -22,7 +22,6 @@
         <i class="fa-solid fa-bolt"></i>
       </div>
     </div>
-
     <header class="screen-header">
       <h1 class="screen-header__title">Friends</h1>
       <div class="screen-header__icons">
@@ -31,7 +30,51 @@
         <span> <i class="fa-solid fa-gear fa-lg"></i> </span>
       </div>
     </header>
+    <a href="#" id="friends-display-link">
+      <i class="fa-solid fa-circle-info fa-lg"></i>
+      Friends Names Display
+      <i class="fa-solid fa-angle-right fa-xs"></i>
+    </a>
 
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="img/profile-image.jpg"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">taeseung</h4>
+            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fa-solid fa-angle-up"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="img/channel-image.jpg"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Channel
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span>2</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+    </main>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
@@ -53,7 +96,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="#">
             <span class="nav__dot"></span>
-            <i class="fa-solid fa-ellipsis fa-2x"></i
+            <i class="fa-solid fa-ellipsis fa-2x ellipsis-stroke"></i
           ></a>
         </li>
       </ul>
