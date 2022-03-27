@@ -4,11 +4,29 @@
   align-items: center;
   padding: var(--horizontal-space);
   padding-top: 50px;
+  margin-bottom: 15px;
 }
 .screen-header__title {
   font-size: 28px;
   font-weight: 600;
 }
-.screen-header__icons span {
+.screen-header__icons > span {
   margin-left: 25px;
+}
+.screen-header__icons span:nth-child(2) {
+  position: relative;
+}
+.screen-header__icons span:nth-child(2) span {
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  padding: 2px;
+  text-align: center;
+  line-height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  right: 1px;
+  top: 5px;
+  font-size: 19px;
+  font-weight: 600;
 }
