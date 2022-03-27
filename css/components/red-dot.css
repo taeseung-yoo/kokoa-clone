@@ -1,0 +1,7 @@
+.red-dot {
+  color: tomato;
+  transform: scale(0.3);
+}
+.red-dot-parent {
+  position: relative;
+}

@@ -30,3 +30,8 @@
   font-size: 19px;
   font-weight: 600;
 }
+.header__red-dot {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
