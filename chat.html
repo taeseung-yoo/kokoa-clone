@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat - Kokoa Clone</title>
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fa-solid fa-battery-half fa-lg"></i>
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+    </div>
+    <header class="alt-screen-header">
+      <div class="alt-screen-header__column">
+        <a href="chats.html">
+          <i class="fa-solid fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-screen-header__column">
+        <span class="alt-screen-header__title">my friend</span>
+      </div>
+      <div class="alt-screen-header__column">
+        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </div>
+    </header>
+    <main class="main-screen chat-screen">
+      <div class="chat__timestamp">Monday, March 28, 2022</div>
+      <div class="message-row">
+        <img src="img/profile-image.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">my friend</span>
+          <div class="message-row__info">
+            <span class="message-row__bubble">Hi!</span>
+            <span class="message-row__time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message-row__info">
+            <span class="message-row__bubble">Hi nice to meet you!</span>
+            <span class="message-row__time">21:28</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-solid fa-plus"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <button class="reply__emoticon">
+          <i class="fa-regular fa-face-smile fa-2x"></i>
+        </button>
+        <button class="reply__send">
+          <i class="fa-solid fa-arrow-up fa-xl"></i>
+        </button>
+      </div>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/efafbbf547.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
