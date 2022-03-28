@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Kokoa Clone</title>
+    <title>More - Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -23,20 +23,18 @@
       </div>
     </div>
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span> <i class="fa-solid fa-magnifying-glass fa-xl"></i> </span>
-        <span> <i class="fa-solid fa-music stroke fa-xl"></i> </span>
-        <span> <i class="fa-solid fa-gear fa-xl"></i> </span>
+        <span> <i class="fa-solid fa-music fa-xl stroke"></i> </span>
+        <span class="red-dot-parent">
+          <i class="fa-solid fa-gear fa-xl stroke"></i>
+          <i class="fa-solid fa-circle red-dot header__red-dot"></i>
+        </span>
       </div>
     </header>
-    <a href="#" id="friends-display-link">
-      <i class="fa-solid fa-circle-info fa-lg"></i>
-      Friends Names Display
-      <i class="fa-solid fa-angle-right fa-xs"></i>
-    </a>
 
-    <main class="friends-screen">
+    <main class="main-screen more-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
@@ -45,43 +43,65 @@
           />
           <div class="user-component__text">
             <h4 class="user-component__title">taeseung</h4>
-            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+            <h6 class="user-component__subtitle">+82 1234 5678</h6>
+            <i class="fa-solid fa-circle-exclamation"></i>
           </div>
         </div>
-        <div class="user-component__column"></div>
+        <div class="user-component__column">
+          <i class="fa-regular fa-message fa-2x"></i>
+        </div>
+      </div>
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fa-regular fa-calendar-check fa-2x"></i>
+          <span>Calendar</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-box-archive fa-2x stroke"></i>
+          <span>Talk Drive</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-regular fa-face-grin fa-2x"></i>
+          <span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-brush fa-2x stroke"></i>
+          <span>Themes</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-solid fa-piggy-bank fa-2x stroke"></i>
+          <span>Account</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-regular fa-comments fa-2x"></i>
+          <span>Openchat</span>
+        </div>
+      </div>
+      <div class="more__suggestions">
+        <h4>Suggestions</h4>
+        <div class="icon-row ">
+          <div class="icon-row__icon">
+          <img src="img/kakaostory.png" >
+          <span>Kakao Story</span>
+        </div>
+        <div class="icon-row__icon">
+          <img src="img/kakaofriends.jpg" >
+          <span>kakao friends</span>
+        </div>
+        <div class="icon-row__icon">
+          <img src="img/friendsgem.jpg" >
+          <span>Friends Gem</span>
+        </div>
       </div>
 
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fa-solid fa-angle-up"></i>
-        </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="img/channel-image.jpg"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
-            </div>
-          </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fa-solid fa-angle-right"></i>
-            </div>
-          </div>
-        </div>
+      </div>
       </div>
     </main>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html">
-            <i class="fa-solid fa-user fa-2x"></i
+            <i class="fa-regular fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
@@ -97,7 +117,7 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link red-dot-parent" href="more.html">
-            <i class="fa-solid fa-ellipsis fa-2x stroke"> </i>
+            <i class="fa-solid fa-ellipsis fa-2x"> </i>
             <i class="fa-solid fa-circle red-dot nav__red-dot"></i>
           </a>
         </li>
