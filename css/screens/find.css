@@ -49,3 +49,63 @@
 .open-chat__header a {
   color: rgba(0, 0, 0, 0.4);
 }
+.open-post {
+  display: flex;
+  justify-content: space-between;
+}
+.open-post__column {
+  height: 135px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: var(--main-border);
+  position: relative;
+}
+.open-post__img {
+  width: 105px;
+  height: 105px;
+  border-radius: 10px;
+}
+.open-post__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.open-post__hashtags {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.3);
+  margin: 8px 0px;
+  text-transform: uppercase;
+}
+.open-post__members {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+.open-post__members img {
+  width: 20px;
+  height: 20px;
+  border-radius: 40%;
+}
+.open-post__members .divider {
+  width: 1.3px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.open-post__member-count {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 0px 5px;
+}
+.open-post__status {
+  color: #ff75ca;
+  padding: 0px 5px;
+}
+.open-post_like {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 12px;
+  position: absolute;
+  right: 5px;
+  bottom: 20px;
+}
