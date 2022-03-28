@@ -12,6 +12,7 @@
   background-color: #abc1d1;
   z-index: 1;
 }
+
 .chat-screen {
   margin-top: 100px;
   display: flex;
@@ -25,10 +26,31 @@
   padding: 8px 15px;
   border-radius: 20px;
 }
+@keyframes leftToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes RightToLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 .message-row {
   width: 100%;
   display: flex;
   align-items: center;
+  animation: leftToRight 0.3s linear;
 }
 .message-row img {
   width: 50px;
@@ -62,6 +84,7 @@
 }
 .message-row--own {
   justify-content: flex-end;
+  animation: RightToLeft 0.3s linear;
 }
 .message-row--own .message-row__info {
   flex-direction: row-reverse;
@@ -82,6 +105,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 .reply__column:first-child {
   width: 35px;
@@ -92,6 +116,7 @@
   justify-content: center;
   align-items: center;
   margin-right: 15px;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .reply__column:last-child {
@@ -102,12 +127,15 @@
   padding-left: 15px;
   display: flex;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
 }
 .reply__column:last-child .reply__emoticon {
   color: rgba(0, 0, 0, 0.3);
   padding: 0px 15px;
   border: none;
   background-color: #ffffff;
+  transition: opacity 0.3s ease-in-out;
 }
 .reply__column:last-child .reply__send {
   width: 42px;
@@ -118,9 +146,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.3s ease-in-out;
 }
 .reply__column input {
   width: 280px;
   height: 47px;
   border: none;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within .reply__column:last-child {
+  width: 450px;
+  transform: translateX(-20px) translateY(-80px);
+}
+.reply:focus-within {
+  transform: translateY(80px);
 }

@@ -12,6 +12,7 @@
 @import "components/red-dot.css";
 @import "components/stroke.css";
 @import "components/icon-row.css";
+@import "components/no-mobile.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -27,7 +28,7 @@
 body {
   color: #2e363e;
   font-family: "Open Sans", sans-serif;
-  height: 130vh;
+  height: 100vh;
 }
 .main-screen {
   padding: 0px var(--horizontal-space);

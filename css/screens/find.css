@@ -87,7 +87,7 @@
   color: #ff75ca;
   padding: 0px 5px;
 }
-.open-post_like {
+.open-post__like {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5px;
@@ -95,4 +95,22 @@
   position: absolute;
   right: 5px;
   bottom: 20px;
+}
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.2);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+.open-post__like:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
 }
